@@ -160,22 +160,22 @@ gulp.task('bower-normalize', function() {
 });
 
 gulp.task('bower-bourbon', function() {
-  return gulp.src([bower+'bourbon/dist/bourbon.scss'])
+  return gulp.src([bower+'bourbon/**/*'])
   .pipe(gulp.dest(source+'sass'));
 });
 
 gulp.task('bower-jetpack', function() {
-  return gulp.src([bower+'jetpack/*'])
+  return gulp.src([bower+'jetpack/**/*'])
   .pipe(gulp.dest(build+'plugins/jetpack'));
 });
 
 gulp.task('bower-yoastseo', function() {
-  return gulp.src([bower+'wordpress-seo/*'])
+  return gulp.src([bower+'wordpress-seo/**/*'])
   .pipe(gulp.dest(build+'plugins/wordpress-seo'));
 });
 
 gulp.task('bower-_s', function() {
-  return gulp.src([bower+'_s/*'])
+  return gulp.src([bower+'_s/**/*'])
   .pipe(gulp.dest(source));
 });
 

@@ -1,5 +1,5 @@
 #Based on WORDPRESS-GULP-BOWER-SASS STARTER KIT and _s
-Dont forget to setup symlink $ mklink /j C:\repo\gulp-press\build C:\wamp\www\highlands\wp-content\themes\gulp-press
+##Dont forget to setup symlink $ mklink /j C:\repo\gulp-press\build C:\wamp\www\highlands\wp-content\themes\gulp-press
 
 This is a starter kit for developing WordPress themes with [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). No WordPress templates apart from `functions-sample.php` are included; this is simply project scaffolding for efficient theme and plugin development. For more information [check out this post on my blog](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
 

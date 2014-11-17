@@ -161,7 +161,7 @@ gulp.task('bower-normalize', function() {
 
 gulp.task('bower-bourbon', function() {
   return gulp.src([bower+'bourbon/**/*'])
-  .pipe(gulp.dest(source+'sass'));
+  .pipe(gulp.dest(source+'sass/bourbon'));
 });
 
 gulp.task('bower-jetpack', function() {

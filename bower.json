@@ -28,8 +28,11 @@
   ],
   "dependencies": {
     "meyer-reset": "*",
-    "normalize.css": "^3.0.1",
-    "bourbon": "*",
-    "neat": "*"
+    "normalize.css": "^3.0.1"
+  },
+  "devDependencies": {
+    "bourbon": "~4.0.2",
+    "neat": "~1.7.0",
+    "wordpress-seo": "https://github.com/Yoast/wordpress-seo.git#~1.6.3"
   }
 }

@@ -5,6 +5,7 @@ var project     = 'gulp-press'
   , build       = './build/'
   , dist        = './dist/'+project+'/'
   , source      = './src/' // 'source' instead of 'src' to avoid confusion with gulp.src
+  , plugin      = './plugin/' // wordpress plugins
   , lang        = 'languages/'
   , bower       = './bower_components/'
 ;
@@ -149,7 +150,7 @@ gulp.task('dist-images', ['dist-styles'], function() {
 // ==== BOWER ==== //
 
 // Executed on `bower update` which is in turn triggered by `npm update`; use this to manually copy front-end dependencies into your working source folder
-gulp.task('bower', ['bower-normalize','bower-bourbon', 'meyer-reset']);
+gulp.task('bower', ['bower-normalize','bower-bourbon', 'bower-jetpack', 'bower-yoastseo']);
 
 // Used to get around Sass's inability to properly @import vanilla CSS
 gulp.task('bower-normalize', function() {
@@ -163,9 +164,14 @@ gulp.task('bower-bourbon', function() {
   .pipe(gulp.dest(source+'sass'));
 });
 
-gulp.task('meyer-reset', function() {
-  return gulp.src([bower+'meyer-reset/stylesheets/meyer-reset.scss'])
-  .pipe(gulp.dest(source+'sass'));
+gulp.task('bower-jetpack', function() {
+  return gulp.src([bower+'jetpack/*'])
+  .pipe(gulp.dest(build+'plugins/jetpack'));
+});
+
+gulp.task('bower-yoastseo', function() {
+  return gulp.src([bower+'wordpress-seo/*'])
+  .pipe(gulp.dest(build+'plugins/wordpress-seo'));
 });
 
 

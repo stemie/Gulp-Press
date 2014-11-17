@@ -1,7 +1,7 @@
 // ==== SETUP ==== //
 
 // Project configuration
-var project     = 'my-theme'
+var project     = 'gulp-press'
   , build       = './build/'
   , dist        = './dist/'+project+'/'
   , source      = './src/' // 'source' instead of 'src' to avoid confusion with gulp.src
@@ -22,7 +22,7 @@ var gulp        = require('gulp')
 
 // Stylesheet handling; don't forget `gem install sass`; Compass is not included by default here
 gulp.task('styles', function() {
-  return gulp.src([source+'scss/*.scss', '!'+source+'scss/_*.scss']) // Ignore partials
+  return gulp.src([source+'sass/*.scss', '!'+source+'sass/_*.scss']) // Ignore partials
   .pipe(plugins.rubySass({
     loadPath: bower // Adds the `bower_components` directory to the load path so you can @import directly
   , precision: 8
@@ -57,7 +57,7 @@ gulp.task('scripts-lint', function() {
 // These are the core custom scripts loaded on every page; pass an array to bundle several scripts in order
 gulp.task('scripts-core', function() {
   return gulp.src([
-    source+'js/core.js'
+    source+'js/core.js', source+'js/navigation.js', source+'js/extras.js', source+'js/skip-link-focus.js', source+'js/customizer.js'
     //, source+'js/navigation.js' // An example of how to add files to a bundle
   ])
   .pipe(plugins.concat('core.js'))

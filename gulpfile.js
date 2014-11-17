@@ -57,7 +57,7 @@ gulp.task('scripts-lint', function() {
 // These are the core custom scripts loaded on every page; pass an array to bundle several scripts in order
 gulp.task('scripts-core', function() {
   return gulp.src([
-    source+'js/core.js', source+'js/navigation.js', source+'js/skip-link-focus.js', plugin+'js/combined.min.js'
+    source+'js/core.js', source+'js/navigation.js', source+'js/skip-link-focus.js'
     //, source+'js/navigation.js' // An example of how to add files to a bundle
   ])
   .pipe(plugins.concat('core.js'))
@@ -149,15 +149,24 @@ gulp.task('dist-images', ['dist-styles'], function() {
 // ==== BOWER ==== //
 
 // Executed on `bower update` which is in turn triggered by `npm update`; use this to manually copy front-end dependencies into your working source folder
-gulp.task('bower', ['bower-normalize']);
+gulp.task('bower', ['bower-normalize','bower-bourbon', 'meyer-reset']);
 
 // Used to get around Sass's inability to properly @import vanilla CSS
 gulp.task('bower-normalize', function() {
-  return gulp.src(bower+'normalize.css/normalize.css')
+  return gulp.src([bower+'normalize.css/normalize.css'])
   .pipe(plugins.rename('_base_normalize.scss'))
-  .pipe(gulp.dest(source+'scss'));
+  .pipe(gulp.dest(source+'sass'));
 });
 
+gulp.task('bower-bourbon', function() {
+  return gulp.src([bower+'bourbon/dist/bourbon.scss'])
+  .pipe(gulp.dest(source+'sass'));
+});
+
+gulp.task('meyer-reset', function() {
+  return gulp.src([bower+'meyer-reset/stylesheets/meyer-reset.scss'])
+  .pipe(gulp.dest(source+'sass'));
+});
 
 
 // ==== WATCH & RELOAD ==== //
@@ -173,7 +182,7 @@ gulp.task('server', ['build'], function() {
 
 // Watch task: build stuff when files are modified, livereload when anything in the `build` or `dist` folders change
 gulp.task('watch', ['server'], function() {
-  gulp.watch(source+'scss/**/*.scss', ['styles']);
+  gulp.watch(source+'sass/**/*.scss', ['styles']);
   gulp.watch([source+'js/**/*.js', bower+'**/*.js'], ['scripts']);
   gulp.watch(source+'**/*(*.png|*.jpg|*.jpeg|*.gif)', ['images']);
   gulp.watch(source+'**/*.php', ['php']);

@@ -28,6 +28,8 @@
   ],
   "dependencies": {
     "meyer-reset": "*",
-    "normalize.css": "^3.0.1"
+    "normalize.css": "^3.0.1",
+    "bourbon": "*",
+    "neat": "*"
   }
 }

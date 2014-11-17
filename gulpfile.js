@@ -57,7 +57,7 @@ gulp.task('scripts-lint', function() {
 // These are the core custom scripts loaded on every page; pass an array to bundle several scripts in order
 gulp.task('scripts-core', function() {
   return gulp.src([
-    source+'js/core.js', source+'js/navigation.js', source+'js/extras.js', source+'js/skip-link-focus.js', source+'js/customizer.js'
+    source+'js/core.js', source+'js/navigation.js', source+'js/skip-link-focus.js', plugin+'js/combined.min.js'
     //, source+'js/navigation.js' // An example of how to add files to a bundle
   ])
   .pipe(plugins.concat('core.js'))

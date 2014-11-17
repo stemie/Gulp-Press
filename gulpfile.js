@@ -176,7 +176,7 @@ gulp.task('bower-yoastseo', function() {
 
 gulp.task('bower-_s', function() {
   return gulp.src([bower+'_s/*'])
-  .pipe(gulp.dest(source+'_s'));
+  .pipe(gulp.dest(source));
 });
 
 // ==== WATCH & RELOAD ==== //

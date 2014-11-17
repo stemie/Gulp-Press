@@ -1,5 +1,11 @@
 #Based on WORDPRESS-GULP-BOWER-SASS STARTER KIT and _s
+
 ##Dont forget to setup symlink $ mklink /j C:\repo\gulp-press\build C:\wamp\www\highlands\wp-content\themes\gulp-press
+
+###If you want to start a new project based off this theme
+* Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`
+* Go to the new directory `cd <new-theme-name>`
+* Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/new-theme-name.git master:master`
 
 This is a starter kit for developing WordPress themes with [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). No WordPress templates apart from `functions-sample.php` are included; this is simply project scaffolding for efficient theme and plugin development. For more information [check out this post on my blog](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
 

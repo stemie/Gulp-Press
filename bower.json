@@ -33,6 +33,7 @@
   "devDependencies": {
     "bourbon": "~4.0.2",
     "neat": "~1.7.0",
-    "wordpress-seo": "https://github.com/Yoast/wordpress-seo.git#~1.6.3"
+    "wordpress-seo": "https://github.com/Yoast/wordpress-seo.git#~1.6.3",
+    "_s": "https://github.com/Automattic/_s.git"
   }
 }

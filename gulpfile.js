@@ -150,7 +150,7 @@ gulp.task('dist-images', ['dist-styles'], function() {
 // ==== BOWER ==== //
 
 // Executed on `bower update` which is in turn triggered by `npm update`; use this to manually copy front-end dependencies into your working source folder
-gulp.task('bower', ['bower-normalize','bower-bourbon', 'bower-jetpack', 'bower-yoastseo']);
+gulp.task('bower', ['bower-normalize','bower-bourbon', 'bower-jetpack', 'bower-yoastseo', 'bower-_s']);
 
 // Used to get around Sass's inability to properly @import vanilla CSS
 gulp.task('bower-normalize', function() {
@@ -174,6 +174,10 @@ gulp.task('bower-yoastseo', function() {
   .pipe(gulp.dest(build+'plugins/wordpress-seo'));
 });
 
+gulp.task('bower-_s', function() {
+  return gulp.src([bower+'_s/*'])
+  .pipe(gulp.dest(source+'_s'));
+});
 
 // ==== WATCH & RELOAD ==== //
 

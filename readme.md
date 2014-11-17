@@ -1,6 +1,6 @@
 #Based on WORDPRESS-GULP-BOWER-SASS STARTER KIT and _s
 
-##Dont forget to setup symlink $ mklink /j C:\repo\gulp-press\build C:\wamp\www\highlands\wp-content\themes\gulp-press
+##Dont forget to setup symlink `$ mklink /j C:\repo\gulp-press\build C:\wamp\www\highlands\wp-content\themes\gulp-press`
 
 ###If you want to start a new project based off this theme
 * Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`

@@ -44,3 +44,77 @@ function _s_scripts() {
   }
 }
 add_action( 'wp_enqueue_scripts', '_s_scripts' );
+
+/**
+ * Customisable read more link
+ */
+function the_more_excerpt($arg){
+    echo apply_filters('the_excerpt',get_the_excerpt().' <a class="read-more" href="'.get_permalink().'">'.$arg.'</a>');
+}
+
+/**
+ * Subtitle
+ */
+function sp_subtitle() {
+global $post;
+$arg = get_post_meta($post->ID, '_subheading', true);
+echo '<div class="entry-subtitle">'.$arg.'</div>';
+}
+
+/**
+ * Post type conditional function
+ */ 
+function is_sp_post_type($type){
+    global $wp_query;
+    if($type == get_post_type($wp_query->post->ID)) return true;
+    return false;
+}
+
+/**
+ * Change from slug to normal
+ */ 
+function inverse_slug($str){
+   return ucwords(str_replace('-', ' ', $str));
+}
+
+/**
+ * Loop shortcode
+ */
+function sp_loop_shortcode($atts) {
+   
+   // Defaults
+   extract(shortcode_atts(array(
+      "the_query" => ''
+   ), $atts));
+
+   // de-funkify query
+   $the_query = preg_replace('~&#x0*([0-9a-f]+);~ei', 'chr(hexdec("\\1"))', $the_query);
+   $the_query = preg_replace('~&#0*([0-9]+);~e', 'chr(\\1)', $the_query);
+
+   // query is made               
+   query_posts($the_query);
+   
+   // Reset and setup variables
+   $output = '';
+   $temp_title = '';
+   $temp_link = '';
+   
+   // the loop
+   if (have_posts()) : while (have_posts()) : the_post();
+   
+      $temp_title = get_the_title($post->ID);
+      $temp_link = get_permalink($post->ID);
+
+      $output .= "<li><a href='$temp_link'>$temp_title</a></li>";
+          
+   endwhile; else:
+   
+      $output .= "nothing found.";
+      
+   endif;
+   
+   wp_reset_query();
+   return $output;
+   
+}
+add_shortcode("loop", "sp_loop_shortcode"); // [loop the_query="showposts=100&post_type=page&post_parent=453"]

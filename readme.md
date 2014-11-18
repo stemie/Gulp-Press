@@ -9,7 +9,7 @@
 * Search for: `'_s'` and replace with: `'mytheme'`
 * Search for: `_s_` and replace with: `mytheme_`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: mytheme` in style.css.
-* Search for: `_s` and replace with: ` Mytheme` note there is a space before! ie. ' _s' => ' Megatherium'
+* Search for: `_s` and replace with: ` Mytheme` **note there is a space before! ie. ' _s' => ' Megatherium'**
 * Search for: `_s-` and replace with: `mytheme-`
 
 ###Dont forget to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`

@@ -7,7 +7,7 @@
 * Go to the new directory `cd <new-theme-name>`
 * Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/new-theme-name.git master:master`
 
-##Don't forget to rename the _s theme
+##Comes with _s theme which installs with bower. Don't forget to rename the _s theme
 * Search for: `'_s'` and replace with: `'megatherium'`
 * Search for: `_s_` and replace with: `megatherium_`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
@@ -15,9 +15,7 @@
 * Search for: `_s-` and replace with: `megatherium-`
 
 
-This is a starter kit for developing WordPress themes with [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
-
-It comes with _s theme which installs with bower
+[Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
 
 This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment
 

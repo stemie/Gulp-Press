@@ -12,7 +12,7 @@
 * Search for: ` _s` and replace with: ` Megatherium` note there is a space before! ie. ' _s' => ' Megatherium'
 * Search for: `_s-` and replace with: `megatherium-`
 
-###Dont forget to setup symlink `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
+###Dont forget to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
 
 ###Credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 

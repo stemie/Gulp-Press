@@ -5,7 +5,7 @@ var project     = 'gulp-press'
   , build       = './build/'
   , dist        = './dist/'+project+'/'
   , source      = './src/' // 'source' instead of 'src' to avoid confusion with gulp.src
-  , plugin      = './plugin/' // wordpress plugins
+  , plugin      = './wp_plugins/' // wordpress plugins
   , lang        = 'languages/'
   , bower       = './bower_components/'
 ;
@@ -15,6 +15,7 @@ var gulp        = require('gulp')
   , gutil       = require('gulp-util')
   , plugins     = require('gulp-load-plugins')({ camelize: true }) // This loads all modules prefixed with "gulp-" to plugin.moduleName
   , del         = require('del')
+  , browserSync = require('browser-sync')
 ;
 
 
@@ -166,44 +167,35 @@ gulp.task('bower-bourbon', function() {
 
 gulp.task('bower-jetpack', function() {
   return gulp.src([bower+'jetpack/**/*'])
-  .pipe(gulp.dest(build+'plugins/jetpack'));
+  .pipe(gulp.dest(plugin+'jetpack'));
 });
 
 gulp.task('bower-yoastseo', function() {
   return gulp.src([bower+'wordpress-seo/**/*'])
-  .pipe(gulp.dest(build+'plugins/wordpress-seo'));
+  .pipe(gulp.dest(plugin+'wordpress-seo'));
 });
 
 gulp.task('bower-_s', function() {
-<<<<<<< HEAD
-  return gulp.src([bower+'_s/*'])
-  .pipe(gulp.dest(build+'plugins/_s'));
-=======
   return gulp.src([bower+'_s/**/*'])
   .pipe(gulp.dest(source));
->>>>>>> 53c7d56927b962db3e0efe74cf765d0b03ccf874
 });
 
 // ==== WATCH & RELOAD ==== //
 
-// Start the livereload server; not asynchronous
-gulp.task('server', ['build'], function() {
-  plugins.livereload.listen(35729, function (err) {
-    if (err) {
-      return console.log(err);
-    };
-  });
+// Browser sync
+gulp.task('browser-sync', function() {
+    browserSync({
+        proxy: "localhost/highlands"
+    });
 });
 
 // Watch task: build stuff when files are modified, livereload when anything in the `build` or `dist` folders change
-gulp.task('watch', ['server'], function() {
+gulp.task('watch', ['browser-sync'], function() {
   gulp.watch(source+'sass/**/*.scss', ['styles']);
   gulp.watch([source+'js/**/*.js', bower+'**/*.js'], ['scripts']);
   gulp.watch(source+'**/*(*.png|*.jpg|*.jpeg|*.gif)', ['images']);
   gulp.watch(source+'**/*.php', ['php']);
-  gulp.watch([build+'**/*', dist+'**/*']).on('change', function(file) {
-    plugins.livereload.changed(file.path);
-  });
+  gulp.watch([build+'**/*', dist+'**/*', browserSync.reload]);
 });
 
 

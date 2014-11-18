@@ -1,7 +1,5 @@
 #Based on WORDPRESS-GULP-BOWER-SASS STARTER KIT and _s
 
-##Dont forget to setup symlink `$ mklink /j C:\repo\gulp-press\build C:\wamp\www\highlands\wp-content\themes\gulp-press`
-
 ###If you want to start a new project based off this theme
 * Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`
 * Go to the new directory `cd <new-theme-name>`
@@ -13,6 +11,8 @@
 * Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
 * Search for: ` _s` and replace with: ` Megatherium` note there is a space before! ie ' _s' => ' Megatherium'
 * Search for: `_s-` and replace with: `megatherium-`
+
+###Dont forget to setup symlink `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
 
 ###credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 

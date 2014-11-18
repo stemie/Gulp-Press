@@ -6,11 +6,11 @@
 * Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/<new-theme-name>.git master:master`
 
 ###Don't forget to rename the _s theme (installed via bower automatically, lives in the the src folder)
-* Search for: `'_s'` and replace with: `'megatherium'`
-* Search for: `_s_` and replace with: `megatherium_`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: `_s` and replace with: ` Megatherium` note there is a space before! ie. ' _s' => ' Megatherium'
-* Search for: `_s-` and replace with: `megatherium-`
+* Search for: `'_s'` and replace with: `'mytheme'`
+* Search for: `_s_` and replace with: `mytheme_`
+* Search for: `Text Domain: _s` and replace with: `Text Domain: mytheme` in style.css.
+* Search for: `_s` and replace with: ` Mytheme` note there is a space before! ie. ' _s' => ' Megatherium'
+* Search for: `_s-` and replace with: `mytheme-`
 
 ###Dont forget to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
 

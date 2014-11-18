@@ -7,7 +7,14 @@
 * Go to the new directory `cd <new-theme-name>`
 * Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/new-theme-name.git master:master`
 
-This is a starter kit for developing WordPress themes with [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). No WordPress templates apart from `functions-sample.php` are included; this is simply project scaffolding for efficient theme and plugin development. For more information [check out this post on my blog](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
+
+This is a starter kit for developing WordPress themes with [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
+
+It comes with _s theme which installs with bower
+
+This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment
+
+For more information [check out this blog post](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
 
 The core `gulpfile.js` has been adapted from [Matt Banks](http://mattbanks.me/gulp-wordpress-development/). Additional credit is due to [Mark Goodyear](http://markgoodyear.com/2014/01/getting-started-with-gulp/).
 
@@ -81,19 +88,3 @@ Like images, PHP files can go anywhere under `src` and will be copied to `build`
 ### Other files
 
 If you have other files you want to push through the asset pipeline you'll have to custom code another Gulp task.
-
-
-
-## To do list
-
-* Yeoman generator.
-* Automated JavaScript bundle management.
-* Source maps.
-
-
-
-## LICENSE
-
-Copyright 2014 [Alexander Synaptic](http://alexandersynaptic.com). Licensed under the GPLv3: http://www.gnu.org/licenses/gpl.txt
-
-You are welcome to link back to [my web site](http://synapticism.com) and/or [this GitHub repository](https://github.com/synapticism/wordpress-gulp-bower-sass) if you find this at all useful.

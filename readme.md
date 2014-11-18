@@ -2,9 +2,9 @@
 
 **There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working**
 
-**You need to import bourbon and neat into the main style.scss**
-  * `@import "bourbon/dist/bourbon";`
-  * `@import "neat/app/assets/stylesheets/neat";`
+###You need to import bourbon and neat into the main style.scss
+* `@import "bourbon/dist/bourbon";`
+* `@import "neat/app/assets/stylesheets/neat";`
 
 ###If you want to start a new project based off this theme
 * Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`

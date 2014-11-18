@@ -11,7 +11,7 @@
 * Search for: `'_s'` and replace with: `'megatherium'`
 * Search for: `_s_` and replace with: `megatherium_`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: ` _s` and replace with: ` Megatherium` note the space before!
+* Search for: ` _s` and replace with: ` Megatherium` note there is a space before! ie ' _s' => ' Megatherium'
 * Search for: `_s-` and replace with: `megatherium-`
 
 

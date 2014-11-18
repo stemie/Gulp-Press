@@ -7,21 +7,18 @@
 * Go to the new directory `cd <new-theme-name>`
 * Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/new-theme-name.git master:master`
 
-##Comes with _s theme which installs with bower. Don't forget to rename the _s theme
+##Don't forget to rename the _s theme (installed via bower automatically, lives in the the src folder)
 * Search for: `'_s'` and replace with: `'megatherium'`
 * Search for: `_s_` and replace with: `megatherium_`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
 * Search for: ` _s` and replace with: ` Megatherium` note there is a space before! ie ' _s' => ' Megatherium'
 * Search for: `_s-` and replace with: `megatherium-`
 
-
-[Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
-
-This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment
-
-For more information [check out this blog post](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
-
-The core `gulpfile.js` has been adapted from [Matt Banks](http://mattbanks.me/gulp-wordpress-development/). Additional credit is due to [Mark Goodyear](http://markgoodyear.com/2014/01/getting-started-with-gulp/).
+###credits
+* [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
+* This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment
+* For more information [check out this blog post](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
+* The core `gulpfile.js` has been adapted from [Matt Banks](http://mattbanks.me/gulp-wordpress-development/). Additional credit is due to [Mark Goodyear](http://markgoodyear.com/2014/01/getting-started-with-gulp/).
 
 
 

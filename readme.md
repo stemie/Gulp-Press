@@ -16,9 +16,8 @@
 
 ###Credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
-* This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment
+* This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment. For more information [check out this blog post](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
 * Using _s theme https://github.com/Automattic/_s
-* For more information [check out this blog post](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
 * The core `gulpfile.js` has been adapted from [Matt Banks](http://mattbanks.me/gulp-wordpress-development/). Additional credit is due to [Mark Goodyear](http://markgoodyear.com/2014/01/getting-started-with-gulp/).
 
 

@@ -2,7 +2,7 @@
 
 **There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working**
 
-**You need to import bourbon and neat**
+**You need to import bourbon and neat into the main style.scss**
   * `@import "bourbon/dist/bourbon";`
   * `@import "neat/app/assets/stylesheets/neat";`
 

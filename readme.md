@@ -5,7 +5,7 @@
 * Go to the new directory `cd <new-theme-name>`
 * Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/new-theme-name.git master:master`
 
-##Don't forget to rename the _s theme (installed via bower automatically, lives in the the src folder)
+###Don't forget to rename the _s theme (installed via bower automatically, lives in the the src folder)
 * Search for: `'_s'` and replace with: `'megatherium'`
 * Search for: `_s_` and replace with: `megatherium_`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
@@ -14,7 +14,7 @@
 
 ###Dont forget to setup symlink `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
 
-###credits
+###Credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
 * This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment
 * For more information [check out this blog post](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).

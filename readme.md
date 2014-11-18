@@ -3,7 +3,7 @@
 ###If you want to start a new project based off this theme
 * Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`
 * Go to the new directory `cd <new-theme-name>`
-* Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/new-theme-name.git master:master`
+* Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/<new-theme-name>.git master:master`
 
 ###Don't forget to rename the _s theme (installed via bower automatically, lives in the the src folder)
 * Search for: `'_s'` and replace with: `'megatherium'`

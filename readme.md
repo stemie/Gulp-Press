@@ -1,4 +1,4 @@
-#Based on WORDPRESS-GULP-BOWER-SASS STARTER KIT and _s
+#Gulp Press - starter theme using Gulp, Bower, Sass, _s
 
 ###If you want to start a new project based off this theme
 * Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`

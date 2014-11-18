@@ -9,7 +9,7 @@
 * Search for: `'_s'` and replace with: `'megatherium'`
 * Search for: `_s_` and replace with: `megatherium_`
 * Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-* Search for: ` _s` and replace with: ` Megatherium` note there is a space before! ie ' _s' => ' Megatherium'
+* Search for: ` _s` and replace with: ` Megatherium` note there is a space before! ie. ' _s' => ' Megatherium'
 * Search for: `_s-` and replace with: `megatherium-`
 
 ###Dont forget to setup symlink `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
@@ -17,6 +17,7 @@
 ###Credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
 * This is largely based on https://github.com/synapticism/wordpress-gulp-bower-sass at the moment
+* Using _s theme https://github.com/Automattic/_s
 * For more information [check out this blog post](http://synapticism.com/wordpress-theme-development-with-gulp-bower-and-sass/).
 * The core `gulpfile.js` has been adapted from [Matt Banks](http://mattbanks.me/gulp-wordpress-development/). Additional credit is due to [Mark Goodyear](http://markgoodyear.com/2014/01/getting-started-with-gulp/).
 

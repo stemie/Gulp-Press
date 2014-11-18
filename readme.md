@@ -9,11 +9,11 @@
 
 ##Rename the _s theme
 
-Search for: `'_s'` and replace with: `'megatherium'`
-Search for: `_s_` and replace with: `megatherium_`
-Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
-Search for: ` _s` and replace with: ` Megatherium` note the space before!
-Search for: `_s-` and replace with: `megatherium-`
+*Search for: `'_s'` and replace with: `'megatherium'`
+*Search for: `_s_` and replace with: `megatherium_`
+*Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
+*Search for: ` _s` and replace with: ` Megatherium` note the space before!
+*Search for: `_s-` and replace with: `megatherium-`
 
 
 This is a starter kit for developing WordPress themes with [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 

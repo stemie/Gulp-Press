@@ -1,5 +1,6 @@
 #Gulp Press - starter theme using Gulp, Bower, Sass, Bourbon, Neat, _s
 
+**There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working**
 ###If you want to start a new project based off this theme
 * Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`
 * Go to the new directory `cd <new-theme-name>`

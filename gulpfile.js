@@ -151,18 +151,13 @@ gulp.task('dist-images', ['dist-styles'], function() {
 // ==== BOWER ==== //
 
 // Executed on `bower update` which is in turn triggered by `npm update`; use this to manually copy front-end dependencies into your working source folder
-gulp.task('bower', ['bower-normalize','bower-bourbon', 'bower-jetpack', 'bower-yoastseo', 'bower-_s']);
+gulp.task('bower', ['bower-normalize', 'bower-jetpack', 'bower-yoastseo', 'bower-_s']);
 
 // Used to get around Sass's inability to properly @import vanilla CSS
 gulp.task('bower-normalize', function() {
   return gulp.src([bower+'normalize.css/normalize.css'])
   .pipe(plugins.rename('_base_normalize.scss'))
   .pipe(gulp.dest(source+'sass'));
-});
-
-gulp.task('bower-bourbon', function() {
-  return gulp.src([bower+'bourbon/**/*'])
-  .pipe(gulp.dest(source+'sass/bourbon'));
 });
 
 gulp.task('bower-jetpack', function() {

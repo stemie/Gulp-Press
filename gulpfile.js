@@ -14,8 +14,8 @@ var project     = 'gulp-press'
 var gulp        = require('gulp')
   , gutil       = require('gulp-util')
   , plugins     = require('gulp-load-plugins')({ camelize: true }) // This loads all modules prefixed with "gulp-" to plugin.moduleName
-  , del         = require('del')
-  , browserSync = require('browser-sync')
+  , del         = require('del')/*
+  , browserSync = require('browser-sync') */
 ;
 
 
@@ -151,7 +151,7 @@ gulp.task('dist-images', ['dist-styles'], function() {
 // ==== BOWER ==== //
 
 // Executed on `bower update` which is in turn triggered by `npm update`; use this to manually copy front-end dependencies into your working source folder
-gulp.task('bower', ['bower-normalize', 'bower-jetpack', 'bower-yoastseo', 'bower-_s']);
+gulp.task('bower', ['bower-normalize', 'bower-jetpack', 'bower-yoastseo']);
 
 // Used to get around Sass's inability to properly @import vanilla CSS
 gulp.task('bower-normalize', function() {
@@ -170,27 +170,22 @@ gulp.task('bower-yoastseo', function() {
   .pipe(gulp.dest(plugin+'wordpress-seo'));
 });
 
-gulp.task('bower-_s', function() {
-  return gulp.src([bower+'_s/**/*'])
-  .pipe(gulp.dest(source));
-});
-
 // ==== WATCH & RELOAD ==== //
 
-// Browser sync
+/* Browser sync
 gulp.task('browser-sync', function() {
     browserSync({
         proxy: "localhost/highlands"
     });
-});
+}); */
 
 // Watch task: build stuff when files are modified, livereload when anything in the `build` or `dist` folders change
-gulp.task('watch', ['browser-sync'], function() {
+gulp.task('watch', /*['browser-sync'],*/ function() {
   gulp.watch(source+'sass/**/*.scss', ['styles']);
   gulp.watch([source+'js/**/*.js', bower+'**/*.js'], ['scripts']);
   gulp.watch(source+'**/*(*.png|*.jpg|*.jpeg|*.gif)', ['images']);
   gulp.watch(source+'**/*.php', ['php']);
-  gulp.watch([build+'**/*', dist+'**/*', browserSync.reload]);
+  gulp.watch([build+'**/*', dist+'**/*'/*, browserSync.reload*/]);
 });
 
 

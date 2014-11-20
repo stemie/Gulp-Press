@@ -1,4 +1,5 @@
-#Gulp Press - starter theme using Gulp, Bower, Sass, Bourbon, Neat, _s
+#Gulp Press - Wordpress Starter Theme 
+##Using Gulp, Bower, Sass, Bourbon, Neat, _s
 
 **There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working**
 

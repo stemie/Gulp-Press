@@ -5,11 +5,6 @@
 * `@import "bourbon/dist/bourbon";`
 * `@import "neat/app/assets/stylesheets/neat";`
 
-###If you want to start a new project based off this theme
-* Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`
-* Go to the new directory `cd <new-theme-name>`
-* Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/<new-theme-name>.git master:master`
-
 ###Don't forget to rename the _s theme (installed via bower automatically, lives in the the src folder)
 * Search for: `'_s'` and replace with: `'mytheme'`
 * Search for: `_s_` and replace with: `mytheme_`
@@ -17,9 +12,14 @@
 * Search for: `_s` and replace with: ` Mytheme` **note there is a space before! ie. ' _s' => ' Megatherium'**
 * Search for: `_s-` and replace with: `mytheme-`
 
-**There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working**
+###If you want to start a new project based off this theme
+* Clone it to your local machine with a new name `git clone https://stemie69@bitbucket.org/stemie69/gulp-press.git <new-theme-name>`
+* Go to the new directory `cd <new-theme-name>`
+* Push it to the new repo you created in bitbucket or the like `git push https://stemie69@bitbucket.org/stemie69/<new-theme-name>.git master:master`
 
-###Good idea to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
+###There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working
+
+**Good idea to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`**
 
 ###Credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 

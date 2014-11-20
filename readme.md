@@ -14,7 +14,7 @@
 
 ###There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your new theme files once you start working.
 
-**Good idea to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`**
+**Good idea to setup symlink (before running gulp) here is an example `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`**
 
 ###Credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 

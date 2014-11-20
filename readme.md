@@ -33,9 +33,6 @@
 * Install Gulp and Bower with `npm install gulp -g` and `npm install bower -g`. Install Sass with `gem install sass`.
 * Download or clone the repo and install all dependencies with `npm install` (which will run `bower install`). When you initialize your project npm will fetch the dependencies listed in `package.json`. You may wish to manually check for updates to these dependencies or use `npm update --save-dev` to bump version numbers in `package.json`.
 * Edit `gulpfile.js` and change the `project` variable to match the name of your theme.
-* Install a [Live Reload](http://livereload.com/) browser extension for [Chrome](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) or Firefox.
-* Copy whatever WordPress starter theme you wish to use into the `src` directory, run `gulp`, and start hacking!
-* With Live Reload configured correctly your browser will refresh anytime you edit and save a file under `src`.
 
 
 

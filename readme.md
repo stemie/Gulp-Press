@@ -1,8 +1,6 @@
 #Gulp Press - Wordpress Starter Theme 
 **Using Gulp, Bower, Sass, Bourbon, Neat, _s**
 
-**There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working**
-
 ###You need to import bourbon and neat into the main style.scss
 * `@import "bourbon/dist/bourbon";`
 * `@import "neat/app/assets/stylesheets/neat";`
@@ -19,7 +17,9 @@
 * Search for: `_s` and replace with: ` Mytheme` **note there is a space before! ie. ' _s' => ' Megatherium'**
 * Search for: `_s-` and replace with: `mytheme-`
 
-###Dont forget to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
+**There is a Gulp Task called `bower-_s` this should be removed after setup so that it's doesn't overwrite your theme files once you start working**
+
+###Good idea to setup symlink (before running gulp) `$ mklink /j C:\repo\<theme-name>\build C:\wamp\www\<theme-name>\wp-content\themes\gulp-press`
 
 ###Credits
 * [Gulp](http://gulpjs.com/), [Bower](http://bower.io/), and [Sass](http://sass-lang.com/). 
